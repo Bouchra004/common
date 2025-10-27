@@ -1,150 +1,111 @@
-/* POLICE ET BASE */
-* {
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #1e1f26;
-  color: #fff;
-  overflow-x: hidden;
-}
-
-/* EN-TÊTE */
-header {
-  width: 100%;
+/* ===== HEADER ===== */
+header.cv-header {
+  background: linear-gradient(135deg, #000, #343a40);
+  color: white;
+  padding: 60px 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 8%;
-  background-color: #1e1f26;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.logo span {
-  color: #00bfa6;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-}
-
-nav ul li a {
-  color: #ccc;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-  color: #00bfa6;
-}
-
-.download-btn {
-  background: none;
-  border: 2px solid #00bfa6;
-  color: #00bfa6;
-  padding: 8px 18px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.download-btn:hover {
-  background: #00bfa6;
-  color: #fff;
-}
-
-/* SECTION HERO */
-.hero {
-  display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 80px 10%;
-  min-height: 90vh;
-  background-color: #25262e;
-  border-radius: 0 0 80px 80px;
+  align-items: center;
+  text-align: center;
 }
 
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-image img {
-  width: 80%;
-  max-width: 350px;
-  border-radius: 50%;
+header .photo img {
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 20px;
 }
 
-.hero-content {
-  flex: 1;
-  padding-left: 50px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
+header h1 {
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.2;
 }
 
-.hero-content h1 span {
-  color: #00bfa6;
+header h1 span {
+  color: #ffc107;
 }
 
-.role {
-  margin: 15px 0;
-  color: #00bfa6;
-  letter-spacing: 2px;
+header h3 {
+  font-weight: 500;
+  color: #f8f9fa;
 }
 
-.hero-content p {
-  line-height: 1.7;
-  color: #ccc;
-  max-width: 500px;
-  margin-bottom: 30px;
+/* ===== SECTIONS ===== */
+section {
+  margin: 60px auto;
+  max-width: 900px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-.contact-btn {
-  background: #00bfa6;
-  color: #fff;
+h2 {
+  color: #000;
+  font-weight: 700;
+  border-bottom: 3px solid #ffc107;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* ===== PORTFOLIO ===== */
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+a {
+  color: #000;
   text-decoration: none;
-  padding: 10px 25px;
-  border-radius: 25px;
-  font-weight: 600;
-  transition: 0.3s;
 }
 
-.contact-btn:hover {
-  background: #009e8c;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero-content {
-    padding-left: 0;
-  }
-  .hero-image img {
-    margin-bottom: 30px;
-  }
+a:hover {
+  color: #ffc107;
 }
