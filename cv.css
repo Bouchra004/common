@@ -1,0 +1,150 @@
+/* POLICE ET BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1f26;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* EN-TÊTE */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  background-color: #1e1f26;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #00bfa6;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #00bfa6;
+}
+
+.download-btn {
+  background: none;
+  border: 2px solid #00bfa6;
+  color: #00bfa6;
+  padding: 8px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #00bfa6;
+  color: #fff;
+}
+
+/* SECTION HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10%;
+  min-height: 90vh;
+  background-color: #25262e;
+  border-radius: 0 0 80px 80px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 80%;
+  max-width: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  color: #00bfa6;
+}
+
+.role {
+  margin: 15px 0;
+  color: #00bfa6;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  line-height: 1.7;
+  color: #ccc;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.contact-btn {
+  background: #00bfa6;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #009e8c;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    padding-left: 0;
+  }
+  .hero-image img {
+    margin-bottom: 30px;
+  }
+}

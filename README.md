@@ -9,6 +9,10 @@ Chaque étudiant doit ajouter **son nom et l’URL vers son CV en ligne** (PDF, 
 |-----|------------------|
 | Boukary DIALLO | [CV Boukary DIALLO ](https://www.boukary.dev) |
 | ... | ... |
+| Nom | Lien vers le CV |
+|-----|------------------|
+| Ouedraogo Bouchra| [CV  ouedraogo Bouchra ]https://github.com/Bouchra004/common.git |
+| ... | ... 
 
 ## 🧭 Instructions
 
